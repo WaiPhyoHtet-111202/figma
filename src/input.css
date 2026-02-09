@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: url(./font/BAHNSCHRIFT\ 13.TTF) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-bahn: "Bahnschrift", sans-serif;
+  --color-primary-color: #d71920;
+  --color-secondary-color: #0e3178;
+  --color-tertiary: #00984a;
+  --color-text-disable: #a7a7a7;
+  --color-text-surface: #ffffff;
+  --color-nav-link-text: #333333;
+  --color-button-active: #ac141a;
+  --color-card-text: #444444;
+  --color-loan: #dee2fe;
+  --color-heading: #000000;
+  --color-update: #606060;
+  --color-background : #F5F5F5;
+}
