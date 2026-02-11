@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MTB</title>
     <link href="./src/output.css" rel="stylesheet" />
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
+    /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -83,503 +87,187 @@
         </nav>
       </header>
       <section>
-        <div class="md:hidden justify-center bg-gray-100">
-          <div class="carousel">
-            <div id="item1" class="carousel-item relative w-full">
-              <img src="./slide_bar/mobile/mobilePhoto.jpg" class="w-full" />
-            </div>
-
-            <div id="item2" class="carousel-item relative w-full">
-              <img src="./slide_bar/mobile/Bridge.jpg" class="w-full" />
-            </div>
-
-            <div id="item3" class="carousel-item relative w-full">
-              <img src="./slide_bar/mobile/couple.jpg" class="w-full" />
-            </div>
-
-            <div id="item4" class="carousel-item relative w-full">
-              <img src="./slide_bar/mobile/family.jpg" class="w-full" />
-            </div>
-
-            <div id="item5" class="carousel-item relative w-full">
-              <img src="./slide_bar/mobile/office.jpg" class="w-full" />
-            </div>
-
+        <div
+          id="indicators-carousel"
+          class="relative w-full md:hidden"
+          data-carousel="static"
+        >
+          <div class="relative h-56 overflow-hidden rounded-base md:h-96">
             <div
-              class="absolute z-30 flex flex-col -translate-y-1/2 right-10 top-1/5 space-y-4"
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
             >
-              <a
-                href="#item1"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-              <a
-                href="#item2"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-              <a
-                href="#item3"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-              <a
-                href="#item4"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-              <a
-                href="#item5"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="md:flex lg:hidden justify-center bg-gray-100 hidden">
-          <div class="carousel">
-            <div id="tablet-item1" class="carousel-item relative w-full">
-              <img src="./slide_bar/desktop/sunset.jpg" class="w-full" />
-            </div>
-
-            <div id="tablet-item2" class="carousel-item relative w-full">
-              <img src="./slide_bar/desktop/sunny.jpg" class="w-full" />
-            </div>
-
-            <div id="tablet-item3" class="carousel-item relative w-full">
               <img
-                src="./slide_bar/desktop/createYourWorld.jpg"
-                class="w-full"
+                src="./slide_bar/mobile/mobilePhoto.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
               />
             </div>
 
-            <div id="tablet-item4" class="carousel-item relative w-full">
-              <img src="./slide_bar/desktop/lifeGoal.jpg" class="w-full" />
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./slide_bar/mobile/Bridge.jpg"
+                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
             </div>
 
-            <div id="tablet-item5" class="carousel-item relative w-full">
-              <img src="./slide_bar/desktop/bussiness.jpg" class="w-full" />
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./slide_bar/mobile/couple.jpg"
+                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
             </div>
 
-            <div
-              class="absolute z-30 flex flex-col -translate-y-1/2 right-10 top-1/6 space-y-4"
-            >
-              <a
-                href="#tablet-item1"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-              <a
-                href="#tablet-item2"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-              <a
-                href="#tablet-item3"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-              <a
-                href="#tablet-item4"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-              <a
-                href="#tablet-item5"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./slide_bar/mobile/family.jpg"
+                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./slide_bar/mobile/office.jpg"
+                class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
             </div>
           </div>
+
+          <div
+            class="absolute z-30 flex flex-col -translate-y-1/2 right-10 top-1/2 space-y-4"
+          >
+            <button
+              class="w-2 h-2 rounded-full bg-secondary-color/50! hover:bg-secondary-color! focus:outline-2 focus:outline-offset-4 focus:outline-secondary-color focus:bg-secondary-color!"
+              type="button"
+              aria-current="True"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              class="w-2 h-2 rounded-full bg-secondary-color/50! hover:bg-secondary-color! focus:outline-2 focus:outline-offset-4 focus:outline-secondary-color focus:bg-secondary-color!"
+              type="button"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              class="w-2 h-2 rounded-full bg-secondary-color/50! hover:bg-secondary-color! focus:outline-2 focus:outline-offset-4 focus:outline-secondary-color focus:bg-secondary-color!"
+              type="button"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              class="w-2 h-2 rounded-full bg-secondary-color/50! hover:bg-secondary-color! focus:outline-2 focus:outline-offset-4 focus:outline-secondary-color focus:bg-secondary-color!"
+              type="button"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              class="w-2 h-2 rounded-full bg-secondary-color/50! hover:bg-secondary-color! focus:outline-2 focus:outline-offset-4 focus:outline-secondary-color focus:bg-secondary-color!"
+              type="button"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
         </div>
-        <div class="lg:flex justify-center bg-gray-100 hidden">
-          <div class="carousel">
-            <div id="desktop-item1" class="carousel-item relative w-full">
-              <img src="./slide_bar/desktop/desktop-text.jpg" class="w-full" />
+        <div
+          id="indicators-carousel"
+          class="relative w-full hidden md:block"
+          data-carousel="static"
+        >
+          <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                src="./slide_bar/desktop/desktop-text.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
             </div>
 
-            <div id="desktop-item2" class="carousel-item relative w-full">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
                 src="./slide_bar/desktop/desktop-bridge.jpg"
-                class="w-full"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
               />
             </div>
 
-            <div id="desktop-item3" class="carousel-item relative w-full">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
                 src="./slide_bar/desktop/createYourWorld.jpg"
-                class="w-full"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
               />
             </div>
 
-            <div id="desktop-item4" class="carousel-item relative w-full">
-              <img src="./slide_bar/desktop/lifeGoal.jpg" class="w-full" />
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./slide_bar/desktop/lifeGoal.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
             </div>
 
-            <div id="desktop-item5" class="carousel-item relative w-full">
-              <img src="./slide_bar/desktop/bussiness.jpg" class="w-full" />
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./slide_bar/desktop/lifeGoal.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
             </div>
+          </div>
 
-            <div
-              class="absolute z-30 flex flex-col -translate-y-1/2 right-10 top-1/2 space-y-4"
-            >
-              <a
-                href="#desktop-item1"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-              <a
-                href="#desktop-item2"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-              <a
-                href="#desktop-item3"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-              <a
-                href="#desktop-item4"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-              <a
-                href="#desktop-item5"
-                class="w-4 h-4 rounded-full border-2 border-white hover:bg-white/50 bg-secondary-color"
-              ></a>
-            </div>
+          <div
+            class="absolute z-30 flex flex-col -translate-y-1/2 right-10 top-1/2 space-y-4"
+          >
+            <button
+              class="w-4 h-4 rounded-full bg-secondary-color/50! hover:bg-secondary-color! focus:outline-2 focus:outline-offset-4 focus:outline-secondary-color focus:bg-secondary-color!"
+              type="button"
+              aria-current="True"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              class="w-4 h-4 rounded-full bg-secondary-color/50! hover:bg-secondary-color! focus:outline-2 focus:outline-offset-4 focus:outline-secondary-color focus:bg-secondary-color!"
+              type="button"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              class="w-4 h-4 rounded-full bg-secondary-color/50! hover:bg-secondary-color! focus:outline-2 focus:outline-offset-4 focus:outline-secondary-color focus:bg-secondary-color!"
+              type="button"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              class="w-4 h-4 rounded-full bg-secondary-color/50! hover:bg-secondary-color! focus:outline-2 focus:outline-offset-4 focus:outline-secondary-color focus:bg-secondary-color!"
+              type="button"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              class="w-4 h-4 rounded-full bg-secondary-color/50! hover:bg-secondary-color! focus:outline-2 focus:outline-offset-4 focus:outline-secondary-color focus:bg-secondary-color!"
+              type="button"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
           </div>
         </div>
       </section>
-      <!-- <section class="grid grid-cols-2 gap-4 px-4 lg:px-8">
-        <div class="flex flex-col gap-4">
-          <div
-            class="bg-text-surface flex md:flex-row lg:flex-row flex-col gap-5 lg:gap-6 rounded-lg mt-8 lg:mt-0"
-          >
-            <img
-              class="ps-4 pt-4 lg:py-4"
-              src="./card/Image/cardImage1.jpg"
-              alt="..."
-            />
-            <div
-              class="flex flex-col gap-5 md:py-8 lg:py-8 px-4 pb-4 lg:ps-0 font-poppins"
-            >
-              <h5 class="font-medium text-heading text-[20px] font-poppins">
-                Saving Deposit
-              </h5>
-              <ul
-                class="flex flex-col gap-2.5 text-card-text font-normal text-[13px]"
-              >
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Earn compound interest on deposit.</span>
-                </li>
-                <li class="flex gap-3">
-                  <img
-                    class="pb-5"
-                    src="./card/Icon/check-ring-light.svg"
-                    alt="..."
-                  /><section class="grid grid-cols-2 gap-4 px-4 lg:px-8">
-        <div class="flex flex-col gap-4">
-          <div
-            class="bg-text-surface flex md:flex-row lg:flex-row flex-col gap-5 lg:gap-6 rounded-lg mt-8 lg:mt-0"
-          >
-            <img
-              class="ps-4 pt-4 lg:py-4"
-              src="./card/Image/cardImage1.jpg"
-              alt="..."
-            />
-            <div
-              class="flex flex-col gap-5 md:py-8 lg:py-8 px-4 pb-4 lg:ps-0 font-poppins"
-            >
-              <h5 class="font-medium text-heading text-[20px] font-poppins">
-                Saving Deposit
-              </h5>
-              <ul
-                class="flex flex-col gap-2.5 text-card-text font-normal text-[13px]"
-              >
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Earn compound interest on deposit.</span>
-                </li>
-                <li class="flex gap-3">
-                  <img
-                    class="pb-5"
-                    src="./card/Icon/check-ring-light.svg"
-                    alt="..."
-                  />
-                  <span class="w-55"
-                    >Eligible for ATM/ debit Card,mobile banking.</span
-                  >
-                </li>
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Convenient and reliable for payments </span>
-                </li>
-              </ul>
-              <span class="text-tertiary font-normal text-[15px]"
-                >More Details ></span
-              >
-            </div>
-          </div>
-          <div
-            class="bg-text-surface flex md:flex-row lg:flex-row flex-col gap-5 lg:gap-6 rounded-lg mt-8 lg:mt-0"
-          >
-            <img
-              class="ps-4 pt-4 lg:py-4"
-              src="./card/Image/cardImage2.jpg"
-              alt="..."
-            />
-            <div
-              class="flex flex-col gap-5 md:py-8 lg:py-8 px-4 pb-4 lg:ps-0 font-poppins"
-            >
-              <h5 class="font-medium text-heading text-[20px] font-poppins">
-                Call Deposit
-              </h5>
-              <ul
-                class="flex flex-col gap-2.5 text-card-text font-normal text-[13px]"
-              >
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Earn interest on your daily balance.</span>
-                </li>
-                <li class="flex gap-3">
-                  <img
-                    class="pb-5"
-                    src="./card/Icon/check-ring-light.svg"
-                    alt="..."
-                  />
-                  <span class="w-55"
-                    >Convenient & reliable for regular payments</span
-                  >
-                </li>
-                <li class="flex gap-3">
-                  <img
-                    class="pb-5"
-                    src="./card/Icon/check-ring-light.svg"
-                    alt="..."
-                  />
-                  <span>Can transfer money from account to account.</span>
-                </li>
-              </ul>
-              <span class="text-tertiary font-normal text-[15px]"
-                >More Details ></span
-              >
-            </div>
-          </div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-primary-color">
-          <div class="flex flex-col gap-5 bg-text-surface rounded-lg">
-            <img
-              class="px-4 pt-4"
-              src="./card/Image/cardImage3.jpg"
-              alt="..."
-            />
-            <div class="flex flex-col gap-5 px-4 pb-4 font-poppins">
-              <h5 class="font-medium text-heading text-[20px]">
-                MTB MPU Debit Card
-              </h5>
-              <ul
-                class="flex flex-col gap-2.5 text-card-text font-normal text-[13px]"
-              >
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Earn compound interest on deposit.</span>
-                </li>
-                <li class="flex gap-3">
-                  <img
-                    class="pb-5"
-                    src="./card/Icon/check-ring-light.svg"
-                    alt="..."
-                  />
-                  <span
-                    >Eligible for ATM/ debit Card, mobile <br />banking.</span
-                  >
-                </li>
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Convenient and reliable for payments</span>
-                </li>
-              </ul>
-              <footer class="text-tertiary font-normal text-[15px]">
-                More Detail >
-              </footer>
-            </div>
-          </div>
-          <div
-            class="flex flex-col gap-5 bg-text-surface rounded-lg mb-10 md:mb-0 lg:mb-0"
-          >
-            <img
-              class="px-4 pt-4"
-              src="./card/Image/cardImage4.jpg"
-              alt="..."
-            />
-            <div class="flex flex-col gap-5 px-4 font-poppins">
-              <h5 class="font-medium text-heading text-[20px]">Travel Laon</h5>
-              <span
-                class="w-24 bg-loan text-secondary-color text-[13px] px-2 rounded-sm font-medium"
-              >
-                Shorten Laon
-              </span>
-              <ul
-                class="flex flex-col gap-2.5 text-card-text font-normal text-[13px]"
-              >
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Earn compound interest on deposit.</span>
-                </li>
-                <li class="flex gap-3">
-                  <img
-                    class="pb-5"
-                    src="./card/Icon/check-ring-light.svg"
-                    alt="..."
-                  />
-                  <span
-                    >Eligible for ATM/ debit Card, mobile <br />
-                    banking.</span
-                  >
-                </li>
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Convenient and reliable for payments</span>
-                </li>
-              </ul>
-              <footer class="text-tertiary font-normal text-[15px]">
-                More Detail >
-              </footer>
-            </div>
-          </div>
-        </div>
-      </section>
-                  <span class="w-55"
-                    >Eligible for ATM/ debit Card,mobile banking.</span
-                  >
-                </li>
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Convenient and reliable for payments </span>
-                </li>
-              </ul>
-              <span class="text-tertiary font-normal text-[15px]"
-                >More Details ></span
-              >
-            </div>
-          </div>
-          <div
-            class="bg-text-surface flex md:flex-row lg:flex-row flex-col gap-5 lg:gap-6 rounded-lg mt-8 lg:mt-0"
-          >
-            <img
-              class="ps-4 pt-4 lg:py-4"
-              src="./card/Image/cardImage2.jpg"
-              alt="..."
-            />
-            <div
-              class="flex flex-col gap-5 md:py-8 lg:py-8 px-4 pb-4 lg:ps-0 font-poppins"
-            >
-              <h5 class="font-medium text-heading text-[20px] font-poppins">
-                Call Deposit
-              </h5>
-              <ul
-                class="flex flex-col gap-2.5 text-card-text font-normal text-[13px]"
-              >
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Earn interest on your daily balance.</span>
-                </li>
-                <li class="flex gap-3">
-                  <img
-                    class="pb-5"
-                    src="./card/Icon/check-ring-light.svg"
-                    alt="..."
-                  />
-                  <span class="w-55"
-                    >Convenient & reliable for regular payments</span
-                  >
-                </li>
-                <li class="flex gap-3">
-                  <img
-                    class="pb-5"
-                    src="./card/Icon/check-ring-light.svg"
-                    alt="..."
-                  />
-                  <span>Can transfer money from account to account.</span>
-                </li>
-              </ul>
-              <span class="text-tertiary font-normal text-[15px]"
-                >More Details ></span
-              >
-            </div>
-          </div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-primary-color">
-          <div class="flex flex-col gap-5 bg-text-surface rounded-lg">
-            <img
-              class="px-4 pt-4"
-              src="./card/Image/cardImage3.jpg"
-              alt="..."
-            />
-            <div class="flex flex-col gap-5 px-4 pb-4 font-poppins">
-              <h5 class="font-medium text-heading text-[20px]">
-                MTB MPU Debit Card
-              </h5>
-              <ul
-                class="flex flex-col gap-2.5 text-card-text font-normal text-[13px]"
-              >
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Earn compound interest on deposit.</span>
-                </li>
-                <li class="flex gap-3">
-                  <img
-                    class="pb-5"
-                    src="./card/Icon/check-ring-light.svg"
-                    alt="..."
-                  />
-                  <span
-                    >Eligible for ATM/ debit Card, mobile <br />banking.</span
-                  >
-                </li>
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Convenient and reliable for payments</span>
-                </li>
-              </ul>
-              <footer class="text-tertiary font-normal text-[15px]">
-                More Detail >
-              </footer>
-            </div>
-          </div>
-          <div
-            class="flex flex-col gap-5 bg-text-surface rounded-lg mb-10 md:mb-0 lg:mb-0"
-          >
-            <img
-              class="px-4 pt-4"
-              src="./card/Image/cardImage4.jpg"
-              alt="..."
-            />
-            <div class="flex flex-col gap-5 px-4 font-poppins">
-              <h5 class="font-medium text-heading text-[20px]">Travel Laon</h5>
-              <span
-                class="w-24 bg-loan text-secondary-color text-[13px] px-2 rounded-sm font-medium"
-              >
-                Shorten Laon
-              </span>
-              <ul
-                class="flex flex-col gap-2.5 text-card-text font-normal text-[13px]"
-              >
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Earn compound interest on deposit.</span>
-                </li>
-                <li class="flex gap-3">
-                  <img
-                    class="pb-5"
-                    src="./card/Icon/check-ring-light.svg"
-                    alt="..."
-                  />
-                  <span
-                    >Eligible for ATM/ debit Card, mobile <br />
-                    banking.</span
-                  >
-                </li>
-                <li class="flex gap-3">
-                  <img src="./card/Icon/check-ring-light.svg" alt="..." />
-                  <span>Convenient and reliable for payments</span>
-                </li>
-              </ul>
-              <footer class="text-tertiary font-normal text-[15px]">
-                More Detail >
-              </footer>
-            </div>
-          </div>
-        </div>
-      </section> -->
       <section class="max-w-360 mx-auto py-10 px-4 md:px-8 bg-[#f5f5f5]">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-4">
           <div class="flex flex-col gap-8 md:gap-4">
@@ -824,10 +512,10 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="lg:px-8 lg:py-8 flex lg:gap-10 gap-5 flex-col font-poppins">
+      <section class="w-full">
+        <div class="lg:px-8 lg:py-8 flex lg:gap-10 gap-5 flex-col font-poppin">
           <h2 class="font-medium text-heading text-2xl mx-4">Rates & Others</h2>
-          <div class="flex lg:flex-row flex-col gap-4 items-end px-4">
+          <div class="flex lg:flex-row flex-col gap-4 items-end">
             <div class="flex flex-col gap-8 w-full bg-text-surface">
               <div class="flex flex-col gap-6 px-8 pt-8">
                 <h3 class="font-medium text-xl text-heading hidden md:block">
@@ -955,56 +643,80 @@
             >
               <div class="flex md:justify-between gap-3 md:gap-4">
                 <div
-                  class="flex flex-col items-center gap-4 w-54 rounded-xl bg-text-surface"
+                  class="flex flex-col items-center gap-4 w-54 rounded-xl bg-text-surface hover:bg-[#a7a7a7] group"
                 >
                   <img class="pt-4" src="./icon/moneyBag.svg" alt="..." />
-                  <span class="text-card-text pb-4">Open an account</span>
+                  <span
+                    class="text-card-text pb-4 group-hover:text-[#0e3178]/70"
+                    >Open an account</span
+                  >
                 </div>
                 <div
-                  class="flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54"
+                  class="flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54 hover:bg-[#a7a7a7] group"
                 >
                   <img class="pt-4" src="./icon/travel.svg" alt="..." />
-                  <span class="text-card-text pb-4">Get a travel Loan</span>
+                  <span
+                    class="text-card-text pb-4 group-hover:text-[#0e3178]/70"
+                    >Get a travel Loan</span
+                  >
                 </div>
                 <div
-                  class="md:flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54 hidden"
+                  class="md:flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54 hidden hover:bg-[#a7a7a7] group"
                 >
                   <img class="pt-4" src="./icon/payment.svg" alt="..." />
-                  <span class="text-card-text pb-4">Loan Caculator</span>
+                  <span
+                    class="text-card-text pb-4 group-hover:text-[#0e3178]/70"
+                    >Loan Caculator</span
+                  >
                 </div>
               </div>
               <div class="flex gap-3 md:hidden">
                 <div
-                  class="flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54"
+                  class="flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54 hover:bg-[#a7a7a7] group"
                 >
                   <img class="pt-4" src="./icon/payment.svg" alt="..." />
-                  <span class="text-card-text pb-4">Loan Caculator</span>
+                  <span
+                    class="text-card-text pb-4 group-hover:text-[#0e3178]/70"
+                    >Loan Caculator</span
+                  >
                 </div>
                 <div
-                  class="flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54"
+                  class="flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54 hover:bg-[#a7a7a7] group"
                 >
                   <img class="pt-4" src="./icon/creditCard.svg" alt="..." />
-                  <span class="text-card-text pb-4">Apply MPU card</span>
+                  <span
+                    class="text-card-text pb-4 group-hover:text-[#0e3178]/70"
+                    >Apply MPU card</span
+                  >
                 </div>
               </div>
               <div class="flex md:justify-between gap-3 md:gap-4">
                 <div
-                  class="md:flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54 hidden"
+                  class="md:flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54 hidden hover:bg-[#a7a7a7] group"
                 >
                   <img class="pt-4" src="./icon/creditCard.svg" alt="..." />
-                  <span class="text-card-text pb-4">Apply MPU card</span>
+                  <span
+                    class="text-card-text pb-4 group-hover:text-[#0e3178]/70"
+                    >Apply MPU card</span
+                  >
                 </div>
                 <div
-                  class="flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54"
+                  class="flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54 hover:bg-[#a7a7a7] group"
                 >
-                  <img clas="pt-4" src="./icon/bank.svg" alt="..." />
-                  <span class="text-card-text pb-4">Our Branches</span>
+                  <img class="pt-4" src="./icon/bank.svg" alt="..." />
+                  <span
+                    class="text-card-text pb-4 group-hover:text-[#0e3178]/70"
+                    >Our Branches</span
+                  >
                 </div>
                 <div
-                  class="flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54"
+                  class="flex flex-col justify-center items-center gap-4 bg-text-surface rounded-xl w-54 hover:bg-[#a7a7a7] group"
                 >
                   <img class="pt-4" src="./icon/contactMail.svg" alt="..." />
-                  <span class="text-card-text pb-4">Contact us</span>
+                  <span
+                    class="text-card-text pb-4 group-hover:text-[#0e3178]/70"
+                    >Contact us</span
+                  >
                 </div>
               </div>
             </div>
@@ -1039,10 +751,26 @@
               </div>
             </div>
             <div class="flex gap-6">
-              <img src="./icon/facebook.svg" alt="..." />
-              <img src="./icon/linked in.svg" alt="..." />
-              <img src="./icon/instagram.svg" alt="..." />
-              <img src="./icon/viber.svg" alt="..." />
+              <img
+                class="hover:scale-y-125 hover:scale-x-125"
+                src="./icon/facebook.svg"
+                alt="..."
+              />
+              <img
+                class="hover:scale-y-125 hover:scale-x-125"
+                src="./icon/linked in.svg"
+                alt="..."
+              />
+              <img
+                class="hover:scale-y-125 hover:scale-x-125"
+                src="./icon/instagram.svg"
+                alt="..."
+              />
+              <img
+                class="hover:scale-y-125 hover:scale-x-125"
+                src="./icon/viber.svg"
+                alt="..."
+              />
             </div>
           </div>
           <div
@@ -1056,12 +784,12 @@
               <div
                 class="flex flex-col gap-2 text-text-surface font-normal text-[15px]"
               >
-                <span>Deposit</span>
-                <span>Loans and Advances</span>
-                <span>Remittance</span>
-                <span>Other Services</span>
-                <span>Bill Payment</span>
-                <span>Bancassurance</span>
+                <span class="hover:text-[#a7a7a7]">Deposit</span>
+                <span class="hover:text-[#a7a7a7]">Loans and Advances</span>
+                <span class="hover:text-[#a7a7a7]">Remittance</span>
+                <span class="hover:text-[#a7a7a7]">Other Services</span>
+                <span class="hover:text-[#a7a7a7]">Bill Payment</span>
+                <span class="hover:text-[#a7a7a7]">Bancassurance</span>
               </div>
             </div>
             <div class="flex flex-col gap-1 md:gap-6 lg:gap-6">
@@ -1072,12 +800,12 @@
               <div
                 class="flex flex-col gap-2 text-text-surface font-normal text-[15px]"
               >
-                <span>Deposit</span>
-                <span>Loans and Advances</span>
-                <span>Trade Services</span>
-                <span>Treasury</span>
-                <span>Payroll Services</span>
-                <span>Agent Banking</span>
+                <span class="hover:text-[#a7a7a7]">Deposit</span>
+                <span class="hover:text-[#a7a7a7]">Loans and Advances</span>
+                <span class="hover:text-[#a7a7a7]">Trade Services</span>
+                <span class="hover:text-[#a7a7a7]">Treasury</span>
+                <span class="hover:text-[#a7a7a7]">Payroll Services</span>
+                <span class="hover:text-[#a7a7a7]">Agent Banking</span>
               </div>
             </div>
             <div class="flex flex-col gap-1 lg:gap-6 md:gap-6">
@@ -1088,10 +816,10 @@
               <div
                 class="flex flex-col gap-2 text-text-surface font-normal text-[15px]"
               >
-                <span>About MTB Bank</span>
-                <span>ATM & Branches</span>
-                <span>Careers</span>
-                <span>News</span>
+                <span class="hover:text-[#a7a7a7]">About MTB Bank</span>
+                <span class="hover:text-[#a7a7a7]">ATM & Branches</span>
+                <span class="hover:text-[#a7a7a7]">Careers</span>
+                <span class="hover:text-[#a7a7a7]">News</span>
               </div>
             </div>
             <div class="flex flex-col gap-1 lg:gap-6 pb-7 md:pb-0">
@@ -1102,31 +830,35 @@
               <div
                 class="flex flex-col gap-2 text-text-surface font-normal text-[15px]"
               >
-                <span>Contact Us</span>
-                <span>FAQs</span>
+                <span class="hover:text-[#a7a7a7]">Contact Us</span>
+                <span class="hover:text-[#a7a7a7]">FAQs</span>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="flex flex-col lg:flex-row items-center justify-center gap-4 text-text-surface bg-secondary-color font-normal"
+          class="md:flex flex-col md:flex-row items-center justify-center gap-4 text-text-surface bg-secondary-color font-normal hidden"
         >
-          <span class="text-[13px] lg:hidden px-4 pt-5"
+          <span class="text-[13px] py-5"
             >© 2024 Myanma Tourism Bank . All Rights Reserved.</span
           >
-          <div class="lg:hidden flex gap-4 ps-4 pb-5">
+          <span class="text-[15px] py-5">Terms & Conditions</span>
+          <span class="text-[15px] py-5">Privacy Policies</span>
+        </div>
+        <div
+          class="md:hidden flex flex-col gap-4 text-text-surface bg-secondary-color font-normal"
+        >
+          <span class="text-[13px] px-4 pt-5"
+            >© 2024 Myanma Tourism Bank . All Rights <br />Reserved.</span
+          >
+          <div class="flex gap-4 px-4 pb-5">
             <span class="text-[15px]">Terms & Conditions</span>
             <span class="text-[15px]">Privacy Policies</span>
           </div>
-
-          <span class="text-[13px] hidden lg:block"
-            >© 2024 Myanma Tourism Bank . All Rights Reserved.</span
-          >
-          <span class="text-[15px] hidden lg:block">Terms & Conditions</span>
-          <span class="text-[15px] hidden lg:block">Privacy Policies</span>
         </div>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script>
       const button = document.getElementById("button");
       const menu = document.getElementById("menu-list");
